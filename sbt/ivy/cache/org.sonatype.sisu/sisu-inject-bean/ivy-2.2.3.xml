@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="org.sonatype.sisu"
+		module="sisu-inject-bean"
+		revision="2.2.3"
+		status="release"
+		publication="20110608131838"
+	>
+		<description homepage="" />
+		<m:properties__sisu.guice.version>3.0.3</m:properties__sisu.guice.version>
+		<m:properties__forgeSnapshotUrl>https://repository.sonatype.org/content/repositories/snapshots</m:properties__forgeSnapshotUrl>
+		<m:dependency.management__org.sonatype.sisu.inject__guice-bean-inject__version>2.2.3</m:dependency.management__org.sonatype.sisu.inject__guice-bean-inject__version>
+		<m:dependency.management__org.sonatype.sisu__sisu-inject-bean__version>2.2.3</m:dependency.management__org.sonatype.sisu__sisu-inject-bean__version>
+		<m:dependency.management__org.sonatype.sisu.inject__guice-bean-scanners__version>2.2.3</m:dependency.management__org.sonatype.sisu.inject__guice-bean-scanners__version>
+		<m:dependency.management__org.sonatype.sisu.inject__guice-bean-binders__version>2.2.3</m:dependency.management__org.sonatype.sisu.inject__guice-bean-binders__version>
+		<m:dependency.management__org.sonatype.sisu.inject__guice-bean-converters__version>2.2.3</m:dependency.management__org.sonatype.sisu.inject__guice-bean-converters__version>
+		<m:properties__forgeSnapshotId>forge-snapshots</m:properties__forgeSnapshotId>
+		<m:dependency.management__org.slf4j__slf4j-api__version>1.6.1</m:dependency.management__org.slf4j__slf4j-api__version>
+		<m:dependency.management__junit__junit__version>4.8.2</m:dependency.management__junit__junit__version>
+		<m:properties__forgeReleaseUrl>https://repository.sonatype.org/service/local/staging/deploy/maven2</m:properties__forgeReleaseUrl>
+		<m:dependency.management__org.sonatype.sisu.inject__guice-bean-containers__version>2.2.3</m:dependency.management__org.sonatype.sisu.inject__guice-bean-containers__version>
+		<m:maven.plugins>null__maven-enforcer-plugin__1.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.6|null__maven-enforcer-plugin__1.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.6|null__maven-enforcer-plugin__1.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.6|null__maven-enforcer-plugin__1.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.6|null__maven-enforcer-plugin__1.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.6|null__maven-enforcer-plugin__1.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.6|null__maven-enforcer-plugin__1.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.6|null__maven-enforcer-plugin__1.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.6|null__maven-enforcer-plugin__1.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.6|null__maven-enforcer-plugin__1.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.6|null__maven-enforcer-plugin__1.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.6|null__maven-enforcer-plugin__1.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.6|null__maven-enforcer-plugin__1.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.6|null__maven-enforcer-plugin__1.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.6|null__maven-enforcer-plugin__1.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.6|null__maven-enforcer-plugin__1.0|org.codehaus.mojo__animal-sniffer-maven-plugin__1.6|org.apache.felix__maven-bundle-plugin__null</m:maven.plugins>
+		<m:dependency.management__org.apache.felix__org.apache.felix.framework__version>3.2.2</m:dependency.management__org.apache.felix__org.apache.felix.framework__version>
+		<m:dependency.management__org.testng__testng__version>6.0.1</m:dependency.management__org.testng__testng__version>
+		<m:dependency.management__org.sonatype.sisu.inject__guice-bean-reflect__version>2.2.3</m:dependency.management__org.sonatype.sisu.inject__guice-bean-reflect__version>
+		<m:dependency.management__org.sonatype.sisu.inject__guice-bean-locators__version>2.2.3</m:dependency.management__org.sonatype.sisu.inject__guice-bean-locators__version>
+		<m:dependency.management__aopalliance__aopalliance__version>1.0</m:dependency.management__aopalliance__aopalliance__version>
+		<m:properties__project.build.sourceEncoding>UTF-8</m:properties__project.build.sourceEncoding>
+		<m:dependency.management__javax.inject__javax.inject__version>1</m:dependency.management__javax.inject__javax.inject__version>
+		<m:dependency.management__org.sonatype.sisu__sisu-guice__version>3.0.3</m:dependency.management__org.sonatype.sisu__sisu-guice__version>
+		<e:sbtTransformHash>7174be3135c2a95a21c158fb6beb5a9621b5b898</e:sbtTransformHash>
+		<m:properties__forgeReleaseId>forge-releases</m:properties__forgeReleaseId>
+		<m:dependency.management__org.osgi__org.osgi.core__version>4.2.0</m:dependency.management__org.osgi__org.osgi.core__version>
+		<m:dependency.management__org.osgi__org.osgi.compendium__version>4.2.0</m:dependency.management__org.osgi__org.osgi.compendium__version>
+		<m:dependency.management__ch.qos.logback__logback-classic__version>0.9.28</m:dependency.management__ch.qos.logback__logback-classic__version>
+	</info>
+	<configurations>
+		<conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+		<conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+		<conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+		<conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+		<conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+		<conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+		<conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+		<conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+		<conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+		<conf name="optional" visibility="public" description="contains all optional dependencies"/>
+	</configurations>
+	<publications>
+		<artifact name="sisu-inject-bean" type="bundle" ext="jar" conf="master"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.sonatype.sisu" name="sisu-guice" rev="3.0.3" force="true" conf="compile->compile(*),master(*);runtime->runtime(*)">
+			<artifact name="sisu-guice" type="jar" ext="jar" conf="" m:classifier="no_aop"/>
+			<exclude org="javax.inject" module="javax.inject" name="*" type="*" ext="*" conf="" matcher="exact"/>
+			<exclude org="aopalliance" module="aopalliance" name="*" type="*" ext="*" conf="" matcher="exact"/>
+		</dependency>
+		<dependency org="org.sonatype.sisu.inject" name="guice-bean-containers" rev="2.2.3" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="org.slf4j" name="slf4j-api" rev="1.6.1" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="org.osgi" name="org.osgi.core" rev="4.2.0" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="org.osgi" name="org.osgi.compendium" rev="4.2.0" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="junit" name="junit" rev="4.8.2" force="true" conf="optional->compile(*),master(*);test->runtime(*),master(*)"/>
+		<dependency org="org.testng" name="testng" rev="6.0.1" force="true" conf="optional->compile(*),master(*)"/>
+		<dependency org="ch.qos.logback" name="logback-classic" rev="0.9.28" force="true" conf="test->runtime(*),master(*)"/>
+	</dependencies>
+</ivy-module>
